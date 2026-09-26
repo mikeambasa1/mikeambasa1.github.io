@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mike Ambasa — Data & Bioinformatics Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0f1620;
+    --ink-soft: #182230;
+    --paper: #edeae3;
+    --paper-dim: #93a0ab;
+    --accent: #4fb286;
+    --accent-warm: #d9a441;
+    --line: rgba(237, 234, 227, 0.13);
+    --max: 720px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  ::selection { background: var(--accent); color: var(--ink); }
+
+  a { color: var(--paper); }
+  a.quiet { color: var(--paper-dim); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .2s, color .2s; }
+  a.quiet:hover { color: var(--paper); border-color: var(--accent); }
+
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+  header {
+    padding: 96px 0 64px;
+    border-bottom: 1px solid var(--line);
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center top;
+  }
+  header .wrap { background: var(--ink); padding-top: 8px; padding-bottom: 8px; }
+  .eyebrow-row { display: flex; gap: 10px; align-items: center; margin-bottom: 18px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  .role { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--paper-dim); }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(34px, 6vw, 52px);
+    line-height: 1.12;
+    margin: 0 0 20px;
+    max-width: 12ch;
+  }
+  header p.lede {
+    max-width: 52ch;
+    color: var(--paper-dim);
+    font-size: 18px;
+    margin: 0 0 28px;
+  }
+  .contact-row { display: flex; flex-wrap: wrap; gap: 18px; font-size: 15px; }
+
+  section { padding: 64px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 0 32px;
+  }
+
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; }
+  .skill-group h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+  .skill-group ul { list-style: none; padding: 0; margin: 0; color: var(--paper-dim); }
+  .skill-group li { padding: 4px 0; }
+
+  .project {
+    padding: 32px 0;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 24px;
+  }
+  .project:first-of-type { border-top: none; padding-top: 0; }
+  .project .tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--paper-dim);
+    padding-top: 4px;
+  }
+  .project h3 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 21px; margin: 0 0 8px; }
+  .project p { color: var(--paper-dim); margin: 0 0 12px; max-width: 58ch; }
+  .project .links { display: flex; gap: 16px; font-size: 14px; }
+  .project .links a.quiet:hover { color: var(--accent-warm); border-color: var(--accent-warm); }
+  @media (max-width: 520px) {
+    .project { grid-template-columns: 1fr; gap: 6px; }
+  }
+
+  footer { padding: 48px 0 80px; }
+  footer p { color: var(--paper-dim); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow-row">
+      <span class="dot"></span>
+      <span class="role">Data Analyst · Bioinformatics · Data Science</span>
+    </div>
+    <h1>Mike Ambasa</h1>
+    <p class="lede">I turn biological and business data into decisions — combining bioinformatics analysis with data analytics, and currently deepening my skills in data science.</p>
+    <div class="contact-row">
+      <a class="quiet" href="mailto:mikeambasa1@gmail.com">mikeambasa1@gmail.com</a>
+      <a class="quiet" href="https://wa.me/254769659712">WhatsApp</a>
+      <a class="quiet" href="https://www.linkedin.com/in/mike-ambasa-b99404290/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="quiet" href="https://github.com/mikeambasa1" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>About</h2>
+    <p style="max-width: 58ch; color: var(--paper-dim);">I'm a data analyst and bioinformatics enthusiast based in Kenya, with a foundation in biological sciences and a growing skill set in data analytics and data science. I enjoy working at the intersection of biology and computation — analyzing genomic and biological data with the same rigor I bring to business and analytics datasets. I hold ALX certifications in Data Analytics and Virtual Assistance, and I'm currently building out my data science skills to take on more advanced analytical work.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>BIOINFORMATICS</h3>
+        <ul>
+          <li>Biopython</li>
+          <li>Sequence alignment (BLAST, MSA)</li>
+          <li>Genome assembly & annotation</li>
+          <li>NGS data (FASTQ, SAM/BAM, VCF)</li>
+          <li>Variant calling (e.g. GATK)</li>
+          <li>Phylogenetic analysis</li>
+          <li>Bioconductor (R)</li>
+          <li>NCBI, Ensembl, UniProt, KEGG</li>
+          <li>Linux / command line</li>
+          <li>Workflow tools (Snakemake, Nextflow)</li>
+          <li>Galaxy platform</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>DATA ANALYTICS</h3>
+        <ul>
+          <li>Python (pandas, NumPy, matplotlib, seaborn)</li>
+          <li>R (tidyverse, ggplot2)</li>
+          <li>SQL</li>
+          <li>Excel / Google Sheets</li>
+          <li>Power BI / Tableau</li>
+          <li>Statistical analysis</li>
+          <li>Data cleaning & wrangling</li>
+          <li>Dashboarding & reporting</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>CERTIFICATIONS</h3>
+        <ul>
+          <li>ALX Data Analytics</li>
+          <li>ALX Virtual Assistant</li>
+          <li>Data Science (ongoing)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <div class="tag">Bioinformatics</div>
+      <div>
+        <h3>FOC-TR4 Genome Analysis</h3>
+        <p>Genome analysis project on Fusarium oxysporum f. sp. cubense Tropical Race 4 (FOC-TR4), the pathogen behind Panama disease in banana.</p>
+        <div class="links">
+          <a class="quiet" href="https://github.com/mikeambasa1/foc-tr4-genome-analysis" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Mike Ambasa. Built with HTML &amp; CSS, hosted on GitHub Pages.</p>
+  </div>
+</footer>
+
+</body>
+</html>
